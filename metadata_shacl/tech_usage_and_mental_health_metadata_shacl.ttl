@@ -1,0 +1,96 @@
+@prefix : <http://fairdatapoint.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dash: <http://datashapes.org/dash#> .
+
+:DatasetShape a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ; 
+
+    sh:property [
+        sh:path dct:title ;
+        sh:name "Dataset Title" ;
+        sh:description "A short and descriptive title for the dataset (max 200 characters)." ;
+        sh:minCount 1 ; 
+        sh:maxCount 1;			
+        sh:datatype xsd:string ;
+        sh:maxLength 200 ;
+        dash:viewer dash:LabelViewer ;
+        dash:editor dash:TextFieldEditor ;
+    ] ;
+
+    sh:property [
+        sh:path dct:description ;
+        sh:name "Dataset Description" ;
+        sh:description "A detailed description of the dataset, including scope, contents, and context (minimum 50 characters)." ;
+        sh:minCount 1 ;
+        sh:maxCount 1;
+        sh:datatype xsd:string ;
+        sh:minLength 50 ;
+        dash:viewer dash:TextAreaViewer ;
+        dash:editor dash:TextAreaEditor ;
+    ] ; 
+
+    sh:property [
+        sh:path dct:issued ;
+        sh:name "Date of Creation/Issuance" ;
+        sh:description "The date when the dataset was first issued or created." ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        dash:viewer dash:DateViewer ;
+        dash:editor dash:DatePickerEditor ;
+    ] ;
+
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:name "Keywords" ;
+        sh:description "A set of keywords or tags describing the dataset (at least 3 required)." ;
+        sh:minCount 3 ;             
+        sh:datatype xsd:string ;
+        dash:viewer dash:ListViewer ;
+        dash:editor dash:TextFieldEditor ;
+    ] ;
+
+    sh:property [
+        sh:path dct:type ;
+        sh:name "Data Collection Type" ;
+        sh:description "The method of data collection (synthetic, survey, or observed)." ;
+        sh:minCount 1;
+        sh:maxCount 1 ;
+        sh:in ( "Synthetic Data" "Survey Data" "Observed Data" ) ; 
+        dash:viewer dash:DetailsViewer ;
+        dash:editor dash:EnumSelectEditor ;
+    ] ;
+
+    sh:property [
+        sh:path dct:creator ;
+        sh:name "Data Creator" ;
+        sh:description "The person or organization responsible for creating the dataset." ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        dash:viewer dash:LabelViewer ;
+        dash:editor dash:TextFieldEditor ;
+    ] ;
+
+    sh:property [
+        sh:path dcat:theme ;
+        sh:name "Dataset Theme" ;
+        sh:description "The main subject/theme of the dataset, ideally taken from a controlled vocabulary (e.g., EuroVoc, GEMET)." ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        dash:viewer dash:URIViewer ;
+        dash:editor dash:URIEditor ;
+    ] ;
+
+    sh:property [
+        sh:path dct:license ;
+        sh:name "Dataset License" ;
+        sh:description "The license under which the dataset is made available (e.g., CC-BY-4.0, ODC-BY)." ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        dash:viewer dash:URIViewer ;
+        dash:editor dash:URIEditor ;
+    ] .
+
