@@ -6,7 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/> .
 
-<http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/> rdf:type owl:Ontology .
+<http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
