@@ -1,12 +1,12 @@
-@prefix : <http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/> .
+@prefix : <http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/> .
+@base <http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/> .
 
-<http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health> rdf:type owl:Ontology .
+<http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -37,35 +37,35 @@
                                       rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/daily_screen_time_hours
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/daily_screen_time_hours
 :daily_screen_time_hours rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf owl:topDataProperty ;
                          rdfs:domain :Person ;
                          rdfs:range xsd:double .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/mental_health_score
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/mental_health_score
 :mental_health_score rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :Person ;
                      rdfs:range xsd:double .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/stress_level
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/stress_level
 :stress_level rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :Person ;
               rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/weekly_anxiety_score
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/weekly_anxiety_score
 :weekly_anxiety_score rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain :Person ;
                       rdfs:range xsd:double .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/weekly_depression_score
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/weekly_depression_score
 :weekly_depression_score rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf owl:topDataProperty ;
                          rdfs:domain :Person ;
@@ -99,15 +99,15 @@ owl:sameAs rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/Gender
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/Gender
 :Gender rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/Location
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/Location
 :Location rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/FAIR_UT_Course/2025/group14/tech_usage_and_mental_health/Person
+###  http://w3id.org/FAIR-course-UT/2025/group14/FAIR_project/ontology/tech_usage_and_mental_health_ontology.ttl/Person
 :Person rdf:type owl:Class .
 
 
