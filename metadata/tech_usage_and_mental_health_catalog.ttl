@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf> a dcat:Resource,
+    dcat:Catalog;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Technology Usage and Mental Health Catalog";
+  dcterms:title "Technology Usage and Mental Health Catalog";
+  dcat:version "1.0.0";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2025-11-07T15:12:34.179927471Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2025-11-07T15:12:34.179927471Z"^^xsd:dateTime;
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description "A catalog containing datasets about technology usage and mental health properties correlated with it.";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf#identifier>;
+  dcterms:accessRights <http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "FAIR Data Engineering Course - Group 14"
+    ];
+  dcterms:isPartOf <http://localhost:8080>;
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:issued "2025-11-07T15:12:34.179927471Z"^^xsd:dateTime;
+  dcterms:modified "2025-11-07T15:12:34.179927471Z"^^xsd:dateTime;
+  dcterms:conformsTo <http://localhost:8080/profile/a0949e72-4466-4d53-8900-9436d1049a4b> .
+
+<http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf#identifier> a
+    <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf" .
+
+<http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://localhost:8080/dataset/> a ldp:DirectContainer;
+  dcterms:title "Datasets";
+  ldp:membershipResource <http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf>;
+  ldp:hasMemberRelation dcat:dataset .
+
+<http://localhost:8080/profile/a0949e72-4466-4d53-8900-9436d1049a4b> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Catalog Profile" .

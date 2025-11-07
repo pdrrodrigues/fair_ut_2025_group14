@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# FAIR_Project main repo
+Redirect 301 /FAIR-course-UT/2025/group14/FAIR_project https://github.com/pdrrodrigues/fair_ut_2025_group14/tree/main
+
+# FAIR_Project data folder
+Redirect 301 /FAIR-course-UT/2025/group14/FAIR_project/data https://github.com/pdrrodrigues/fair_ut_2025_group14/tree/main/data
+
+# FAIR_Project metadata folder
+Redirect 301 /FAIR-course-UT/2025/group14/FAIR_project/metadata https://github.com/pdrrodrigues/fair_ut_2025_group14/tree/main/metadata
+
+# FAIR_Project metadata_shacl
+Redirect 301 /FAIR-course-UT/2025/group14/FAIR_project/metadata_shacl https://github.com/pdrrodrigues/fair_ut_2025_group14/tree/main/metadata_shacl
+
+# FAIR_Project ontology
+Redirect 301 /FAIR-course-UT/2025/group14/FAIR_project/ontology https://github.com/pdrrodrigues/fair_ut_2025_group14/tree/main/ontology

@@ -4,47 +4,45 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 
-<http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6> a dcat:Dataset;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Tech Use and Mental Health Dataset";
-  dcterms:title "Tech Use and Mental Health Dataset";
-  <https://w3id.org/fdp/fdp-o#metadataIssued> "2025-10-14T10:20:00.511970897Z"^^xsd:dateTime;
-  <https://w3id.org/fdp/fdp-o#metadataModified> "2025-10-14T11:41:32.508773392Z"^^xsd:dateTime;
+<http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69> a dcat:Dataset;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Tech Usage and Mental Health";
+  dcterms:title "Tech Usage and Mental Health";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2025-11-07T15:35:52.028644458Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2025-11-07T15:35:52.028644458Z"^^xsd:dateTime;
   dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-  dcterms:description "This dataset explores the connections between how people use technology in their daily lives and their overall well-being. It brings together information on screen time, sleep patterns, and different indicators of mental health such as anxiety, and depression. It contains 5000 different persons.";
-  dcterms:conformsTo <http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604>,
-    <http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604>;
+  dcterms:description "This dataset explores the connections between how people use technology in their daily lives and their overall well-being. It brings together information on screen time, sleep patterns, and different indicators of mental health such as anxiety and depression. It contains 5000 different persons.";
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
-  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6#identifier>;
-  dcterms:accessRights <http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6#accessRights>;
-  dcterms:isPartOf <http://localhost:8080/catalog/584210f5-0c36-47bf-b116-9b025b8fb848>;
-  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6/metrics/445c0a70d1e214e545b261559e2842f4>,
-    <http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69#identifier>;
+  dcterms:accessRights <http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69#accessRights>;
+  dcterms:isPartOf <http://localhost:8080/catalog/05d2233a-0541-4bb2-8354-0606cafb8ebf>;
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
   dcterms:creator "Nagpal Prabhavalkar";
   dcterms:type "Synthetic Data";
   dcat:keyword "Daily Screen Hours", "Mental Health", "Sleep Hours";
-  dcat:theme <https://www.wikidata.org/wiki/Q11016>, <https://www.wikidata.org/wiki/Q317309> .
+  dcat:theme <https://www.wikidata.org/wiki/Q11016>, <https://www.wikidata.org/wiki/Q317309>;
+  dcterms:conformsTo <http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604> .
 
-<http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6#identifier> a
+<http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69#identifier> a
     <http://purl.org/spar/datacite/Identifier>;
-  dcterms:identifier "http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6" .
+  dcterms:identifier "http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69" .
 
-<http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6#accessRights>
+<http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69#accessRights>
   a dcterms:RightsStatement;
   dcterms:description "This resource has no access restriction" .
 
-<http://localhost:8080/distribution/> a ldp:DirectContainer, ldp:DirectContainer;
-  dcterms:title "Distributions", "Distributions";
-  ldp:hasMemberRelation dcat:distribution, dcat:distribution;
-  ldp:membershipResource <http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6>,
-    <http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6> .
-
-<http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604> <http://www.w3.org/2000/01/rdf-schema#label>
-    "Dataset Profile", "Dataset Profile" .
-
-<http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6/metrics/445c0a70d1e214e545b261559e2842f4>
+<http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69/metrics/445c0a70d1e214e545b261559e2842f4>
   <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
   <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
 
-<http://localhost:8080/dataset/095c4ef9-4c6a-457e-8102-93eb6ffe01a6/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+<http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69/metrics/5d27e854a9e78eb3f663331cd47cdc13>
   <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
   <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://localhost:8080/distribution/> a ldp:DirectContainer;
+  dcterms:title "Distributions";
+  ldp:membershipResource <http://localhost:8080/dataset/fe9a36eb-98e1-463b-bca8-ccac35140d69>;
+  ldp:hasMemberRelation dcat:distribution .
+
+<http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Dataset Profile" .
